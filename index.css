@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+body {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  font-size: 18px;
+  background-color: hsl(27, 66%, 92%);
+}
+.container {
+  max-width: 500px;
+  width: 90%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  border-radius: 10px;
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1.2em;
+}
+h1 {
+  margin-bottom: 0.5em;
+}
+.chart {
+  background-color: hsl(33, 100%, 98%);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.bar-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(235, 231, 231);
+  margin: 3em 0 2em;
+  height: 250px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+  gap: 1em;
+  text-align: center;
+  position: relative;
+}
+.bar {
+  border-radius: 3px;
+  padding: 0 1em;
+}
+.day {
+  color: hsl(28, 10%, 53%);
+}
+.dark {
+  color: hsl(25, 47%, 15%);
+}
+.wed {
+  background-color: hsl(186, 34%, 60%);
+}
+.mon,
+.tue,
+.thu,
+.fri,
+.sat,
+.sun {
+  background-color: hsl(10, 79%, 65%);
+  height: 100%;
+}
+
+.pri {
+  background-color: hsl(25, 47%, 15%);
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  justify-content: space-around;
+  align-items: center;
+  width: 60px;
+  padding: .5em 0;
+  display: none;
+  top: -3rem;
+  left: -.5rem;
+}
+.per,.mnth{
+  margin-bottom: .5em;
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prev {
+  text-align: right;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 60rem) {
+  .wed:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .mon:hover,
+  .tue:hover,
+  .thu:hover,
+  .fri:hover,
+  .sat:hover,
+  .sun:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
